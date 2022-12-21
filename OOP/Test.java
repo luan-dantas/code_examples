@@ -3,21 +3,12 @@ import java.util.Scanner;
 public class Test{
     public static void main(String[] args){
         
-        //cria um objeto Scanner para obter entrada a partir da janela de comando
-        Scanner input = new Scanner(System.in);
+        // cria dois objetos Account
+        Account account1 = new Account("Jane Doe");
+        Account account2 = new Account("Jhon Doe");
 
-        // cria um objeto Account é atribui a MyAccoument
-        Account myAccount = new Account();
-
-        // exibe o valor inicial do nome
-        System.out.printf("Initial name is: %s%n%n", myAccount.getName());
-
-        // solocita e lê o nome
-        System.out.println("Please enter the name: ");
-        String theName = input.nextLine();
-        myAccount.setName(theName);
-
-        // exibe o nome armazenado no objeto myAccount
-        System.out.printf("Name in objtect account is: %n%s%n", myAccount.getName());
+        // exibe o valor inicial de nome para cada Account
+        System.out.printf("Account1 name is %s%n", account1.getName());
+        System.out.printf("account2 name is %s%n", account2.getName());
     }
 }
